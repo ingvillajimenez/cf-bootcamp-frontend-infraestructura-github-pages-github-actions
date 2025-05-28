@@ -1,9 +1,15 @@
 name: Build and Deploy to Netlify
 
 on:
-  push:
-    branches:
-      - master
+  # push:
+  #   branches:
+  #     - master
+  workflow_dispatch:
+    inputs:
+      deploy:
+        description: "Deploy to Netlify"
+        required: false
+        default: "Trigger deployment"
 
 jobs:
   build:
