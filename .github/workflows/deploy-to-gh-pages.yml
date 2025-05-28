@@ -33,4 +33,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }} # Token de acceso a GitHub
           publish_dir: ./dist # Directorio a publicar
-          publish_branch: gh-pages # Rama donde se publicará el contenido
